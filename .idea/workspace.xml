@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2037711c-cb2d-4f88-8e08-e46edda7a83b" name="Changes" comment="7.4 自定义用户认证 - 内存身份认证" />
+    <list default="true" id="2037711c-cb2d-4f88-8e08-e46edda7a83b" name="Changes" comment="5.3 --文件的上传与下载">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -179,7 +181,7 @@
       <workItem from="1696672998450" duration="47000" />
       <workItem from="1696673053645" duration="530000" />
       <workItem from="1696673595188" duration="183000" />
-      <workItem from="1696673785787" duration="314000" />
+      <workItem from="1696673785787" duration="554000" />
     </task>
     <task id="LOCAL-00001" summary="1-4最新优化20230925">
       <option name="closed" value="true" />
@@ -349,7 +351,39 @@
       <option name="project" value="LOCAL" />
       <updated>1696673506985</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="5.1 --Spring MVC 功能拓展实现">
+      <option name="closed" value="true" />
+      <created>1696674116922</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1696674116922</updated>
+    </task>
+    <task id="LOCAL-00023" summary="5.2 --SpringBoot整合Servlet">
+      <option name="closed" value="true" />
+      <created>1696674174698</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1696674174698</updated>
+    </task>
+    <task id="LOCAL-00024" summary="5.2 --SpringBoot整合Servlet">
+      <option name="closed" value="true" />
+      <created>1696674211435</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1696674211435</updated>
+    </task>
+    <task id="LOCAL-00025" summary="5.3 --文件的上传与下载">
+      <option name="closed" value="true" />
+      <created>1696674311567</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1696674311567</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -397,7 +431,10 @@
     <MESSAGE value="5.3 文件的上传与下载" />
     <MESSAGE value="6.4 自定义Redis缓存序列化" />
     <MESSAGE value="7.4 自定义用户认证 - 内存身份认证" />
-    <option name="LAST_COMMIT_MESSAGE" value="7.4 自定义用户认证 - 内存身份认证" />
+    <MESSAGE value="5.1 --Spring MVC 功能拓展实现" />
+    <MESSAGE value="5.2 --SpringBoot整合Servlet" />
+    <MESSAGE value="5.3 --文件的上传与下载" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.3 --文件的上传与下载" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
