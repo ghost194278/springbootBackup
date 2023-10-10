@@ -1,3 +1,4 @@
+/*
 package cn.lzy.Security.JDBC;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,10 +9,12 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.sql.DataSource;
 
+*/
 /**
  * @author 江梅铭
  * @date 10/8/2023 10:27 AM
- */
+ *//*
+
 @EnableWebSecurity
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
@@ -26,3 +29,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .usersByUsernameQuery(userSQL).authoritiesByUsernameQuery(authoritySQL);
     }}
 
+*/

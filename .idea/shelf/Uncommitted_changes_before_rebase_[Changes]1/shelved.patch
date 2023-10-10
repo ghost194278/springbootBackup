@@ -1,0 +1,55 @@
+Index: src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package cn.lzy.Security.authentication;\r\n\r\nimport org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;\r\nimport org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;\r\nimport org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;\r\nimport org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;\r\n\r\n/**\r\n * @author 江梅铭\r\n * @date 10/7/2023 4:46 PM\r\n */\r\n@EnableWebSecurity\r\npublic class MemorySecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {\r\n    @Override\r\n    protected void configure(AuthenticationManagerBuilder auth) throws Exception {\r\n        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();\r\n        auth.inMemoryAuthentication().passwordEncoder(encoder)\r\n                .withUser(\"shitou\").password(encoder.encode(\"123456\")).roles(\"common\")\r\n                .and()\r\n                .withUser(\"李四\").password(encoder.encode(\"123456\")).roles(\"vip\");\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java b/src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java
+--- a/src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java	(revision 3a203e562113d71da204dd3597a4e8ed114c7f53)
++++ b/src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java	(date 1696944924283)
+@@ -1,22 +1,22 @@
+-package cn.lzy.Security.authentication;
+-
+-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+-import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+-
+-/**
+- * @author 江梅铭
+- * @date 10/7/2023 4:46 PM
+- */
+-@EnableWebSecurity
+-public class MemorySecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
+-    @Override
+-    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+-        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
+-        auth.inMemoryAuthentication().passwordEncoder(encoder)
+-                .withUser("shitou").password(encoder.encode("123456")).roles("common")
+-                .and()
+-                .withUser("李四").password(encoder.encode("123456")).roles("vip");
+-    }
+-}
++//package cn.lzy.Security.authentication;
++//
++//import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
++//import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
++//import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
++//import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
++//
++///**
++// * @author 江梅铭
++// * @date 10/7/2023 4:46 PM
++// */
++//@EnableWebSecurity
++//public class MemorySecurityConfigurerAdapter extends WebSecurityConfigurerAdapter {
++//    @Override
++//    protected void configure(AuthenticationManagerBuilder auth) throws Exception {
++//        BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
++//        auth.inMemoryAuthentication().passwordEncoder(encoder)
++//                .withUser("shitou").password(encoder.encode("123456")).roles("common")
++//                .and()
++//                .withUser("李四").password(encoder.encode("123456")).roles("vip");
++//    }
++//}
