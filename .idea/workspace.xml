@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2037711c-cb2d-4f88-8e08-e46edda7a83b" name="Changes" comment="5.3 --文件的上传与下载">
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/AuthorityRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/CustomerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/RedisSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/UserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
