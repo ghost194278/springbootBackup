@@ -54,10 +54,10 @@ public class RedisSecurityConfig extends WebSecurityConfigurerAdapter {
         http.logout()
                 .logoutUrl("/mylogout")
                 .logoutSuccessUrl("/");
-//        http.rememberMe()
-//                .rememberMeParameter("rememberme")
-//                .tokenValiditySeconds(200)
-//                .tokenRepository(tokenRepository());
+        http.rememberMe()
+                .rememberMeParameter("rememberme")
+                .tokenValiditySeconds(200)
+                .tokenRepository(tokenRepository());
     }
 
 
