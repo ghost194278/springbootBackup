@@ -17,23 +17,23 @@ import java.util.stream.Collectors;
  */
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
+
     @Autowired
     CustomerService customerService;
 
     @Override
-    public UserDetails loadUserByUsername(String s) throws UsernameNotFoundException {
-        Customer customer = customerService.getCustomer(s);
-        List<Authority> authorities = customerService.getCustomerAuthority(s);
-        List<SimpleGrantedAuthority> list = authorities.stream()
-                .map(authority -> new SimpleGrantedAuthority(authority.getAuthority()))
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        Customer customer = customerService.getCustomer(username);
+        List<Authority> authorities = customerService.getCustomerAuthority(username);
+        //对用户权限进行封装
+        List<SimpleGrantedAuthority> list = authorities.stream().map(authority -> new SimpleGrantedAuthority(authority.getAuthority()))
                 .collect(Collectors.toList());
+        //返回的封装的userdatails用户详情类
         if (customer != null) {
             UserDetails userDetails = new User(customer.getUsername(), customer.getPassword(), list);
             return userDetails;
         } else {
-            throw new UsernameNotFoundException("当前用户不存在！");
+            throw new UsernameNotFoundException("当前用户不存在");
         }
     }
-
-
 }

@@ -1,5 +1,4 @@
 package cn.lzy.Security.redis;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
