@@ -17,7 +17,6 @@ public class ChapterApplication extends SpringBootServletInitializer{
         SpringApplication.run(ChapterApplication.class, args);
     }
 
-
         @Override
         protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
             return builder.sources(ChapterApplication.class);
