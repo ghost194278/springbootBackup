@@ -44,8 +44,8 @@ public class Chapter01ApplicationTests {
     @Autowired
     private HelloController helloController;
     @Autowired
-    User user;
-    @Autowired
+//    User user;
+//    @Autowired
     cn.lzy.configbean.Person person;
     @Autowired
     Student student;
@@ -93,7 +93,7 @@ public class Chapter01ApplicationTests {
     public void contextLoads() {
         System.out.println("单元测试返回的数据" + student);
         System.out.println("单元测试返回的person数据" + person);
-        System.out.println("单元测试返回的user数据" + user);
+//        System.out.println("单元测试返回的user数据" + user);
         Comment comment = commentMapper.findById(1);
         Comment comment5 = commentMapper.author("张三");
         System.out.println(commentMapper.author("张三"));
@@ -255,9 +255,9 @@ public class Chapter01ApplicationTests {
     public void sendAttachmentEmailTest() {
         String to = "329511768@qq.com";
         String subject = "附件";
-        String text = "这是一个包含附件的邮件";
-        String filePath = "G:\\email\\元旦放假注意事项.txt";
-        sendEmailService.sendAttachmentEmail(to, subject, text, filePath);
+        String filePath = "G:\\email\\元旦放假注意事项.txt"; // 附件文件路径
+
+        sendEmailService.sendAttachmentEmail(to, subject, filePath);
     }
 
 
@@ -287,6 +287,7 @@ public class Chapter01ApplicationTests {
         String emailContent = templateEngine.process("emailTemplate_vercode", context);
         sendEmailService.sendTemplateEmail(to, subject, emailContent);
     }
+
     @Test
     public void sendImageEmailTest() {
         String to = "329511768@qq.com";
