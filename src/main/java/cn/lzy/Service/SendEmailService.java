@@ -63,8 +63,7 @@ public class SendEmailService {
     }
 
 
-    public void sendComplexEmail(String to, String subject, String text, String filePath, String rscId,
-                                 String rscPath) {
+    public void sendComplexEmail(String to, String subject, String text, String filePath, String rscId, String rscPath) {
         MimeMessage message = mailSender.createMimeMessage();
         try {
             MimeMessageHelper helper = new MimeMessageHelper(message, true);

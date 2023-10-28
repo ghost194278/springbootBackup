@@ -34,7 +34,6 @@ import org.thymeleaf.context.Context;
 
 import java.util.ArrayList;
 import java.util.List;
-
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @ImportResource("classpath:beans.xml")
