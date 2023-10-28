@@ -16,7 +16,7 @@ public class RabbitMQService {
     public void psubConsumerEmail(Message message) {
         byte[] body = message.getBody();
         String s = new String(body);
-        System.out.println("邮件业务接收到消息： "+s);
+        System.out.println("邮件业务接收到消息： " + s);
     }
 
     @RabbitListener(queues = "fanout_queue_qq")

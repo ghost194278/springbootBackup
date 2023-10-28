@@ -44,8 +44,8 @@ public class Chapter01ApplicationTests {
     @Autowired
     private HelloController helloController;
     @Autowired
-//    User user;
-//    @Autowired
+    User user;
+    @Autowired
     cn.lzy.configbean.Person person;
     @Autowired
     Student student;
@@ -162,34 +162,29 @@ public class Chapter01ApplicationTests {
         amqpAdmin.declareExchange(new FanoutExchange("fanout_exchange"));
         amqpAdmin.declareQueue(new Queue("fanout_queue_email"));
         amqpAdmin.declareQueue(new Queue("fanout_queue_sms"));
-        amqpAdmin.declareBinding(new Binding("fanout_queue_email",
-                Binding.DestinationType.QUEUE, "fanout_exchange", "", null));
-        amqpAdmin.declareBinding(new Binding("fanout_queue_sms",
-                Binding.DestinationType.QUEUE, "fanout_exchange", "", null));
+        amqpAdmin.declareBinding(new Binding("fanout_queue_email", Binding.DestinationType.QUEUE, "fanout_exchange", "", null));
+        amqpAdmin.declareBinding(new Binding("fanout_queue_sms", Binding.DestinationType.QUEUE, "fanout_exchange", "", null));
     }
 
     @Test
     public void qq() {
         amqpAdmin.declareExchange(new FanoutExchange("fanout_qq"));
         amqpAdmin.declareQueue(new Queue("fanout_queue_qq"));
-        amqpAdmin.declareBinding(new Binding("fanout_queue_qq",
-                Binding.DestinationType.QUEUE, "fanout_qq", "", null));
+        amqpAdmin.declareBinding(new Binding("fanout_queue_qq", Binding.DestinationType.QUEUE, "fanout_qq", "", null));
     }
 
     @Test
     public void wx() {
         amqpAdmin.declareExchange(new FanoutExchange("fanout_wx"));
         amqpAdmin.declareQueue(new Queue("fanout_queue_wx"));
-        amqpAdmin.declareBinding(new Binding("fanout_queue_wx",
-                Binding.DestinationType.QUEUE, "fanout_wx", "", null));
+        amqpAdmin.declareBinding(new Binding("fanout_queue_wx", Binding.DestinationType.QUEUE, "fanout_wx", "", null));
     }
 
     @Test
     public void email() {
         amqpAdmin.declareExchange(new FanoutExchange("fanout_email"));
         amqpAdmin.declareQueue(new Queue("fanout_queue_email"));
-        amqpAdmin.declareBinding(new Binding("fanout_queue_email",
-                Binding.DestinationType.QUEUE, "fanout_email", "", null));
+        amqpAdmin.declareBinding(new Binding("fanout_queue_email", Binding.DestinationType.QUEUE, "fanout_email", "", null));
     }
 
     @Test
@@ -273,8 +268,7 @@ public class Chapter01ApplicationTests {
         text.append("</html>");
         String rscPath = "G:\\email\\newyear.jpg";
         String filePath = "G:\\email\\元旦放假注意事项.txt";
-        sendEmailService.sendComplexEmail(to, subject, text.toString(),
-                filePath, rscId, rscPath);
+        sendEmailService.sendComplexEmail(to, subject, text.toString(), filePath, rscId, rscPath);
     }
 
     @Test
