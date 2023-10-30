@@ -4,16 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2037711c-cb2d-4f88-8e08-e46edda7a83b" name="Changes" comment="5.3 --文件的上传与下载">
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/AuthorityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/CustomerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/RedisSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/UserDetailsServiceImpl.java" afterDir="false" />
+    <list default="true" id="2037711c-cb2d-4f88-8e08-e46edda7a83b" name="Changes" comment="8 springBoot整合RabbitMQ最新优化">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/RabbitMQ/MQUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/RabbitMQ/MQUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/RabbitMQ/RabbitMQConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/RabbitMQ/RabbitMQConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/RabbitMQ/RabbitMQService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/RabbitMQ/RabbitMQService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/CSRF/CSRFController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/CSRF/CSRFController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/JDBC/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/JDBC/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/authentication/MemorySecurityConfigurerAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/base/FilmeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/base/FilmeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/RedisSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/RedisSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Security/redis/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Service/MyAsyncController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Service/MyAsyncController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Service/MyAsyncService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Service/MyAsyncService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Service/ScheduledTasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Service/ScheduledTasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/lzy/Service/SendEmailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/lzy/Service/SendEmailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/cn/lzy/Chapter01ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/cn/lzy/Chapter01ApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +42,8 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="MIXED" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -97,22 +105,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Chapter01ApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="fk1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.lzy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.lzy" />
-      <option name="MAIN_CLASS_NAME" value="cn.lzy.Chapter01ApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Chapter01ApplicationTests.saveRedisPerson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="fk1" />
       <extension name="coverage">
@@ -124,6 +116,38 @@
       <option name="PACKAGE_NAME" value="cn.lzy" />
       <option name="MAIN_CLASS_NAME" value="cn.lzy.Chapter01ApplicationTests" />
       <option name="METHOD_NAME" value="saveRedisPerson" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter01ApplicationTests.sendqqwx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fk1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lzy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lzy" />
+      <option name="MAIN_CLASS_NAME" value="cn.lzy.Chapter01ApplicationTests" />
+      <option name="METHOD_NAME" value="sendqqwx" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chapter01ApplicationTests.sendqqwxemail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="fk1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.lzy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.lzy" />
+      <option name="MAIN_CLASS_NAME" value="cn.lzy.Chapter01ApplicationTests" />
+      <option name="METHOD_NAME" value="sendqqwxemail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,10 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Chapter01ApplicationTests.sendqqwx" />
+        <item itemvalue="JUnit.Chapter01ApplicationTests.sendqqwxemail" />
         <item itemvalue="JUnit.Chapter01ApplicationTests" />
         <item itemvalue="JUnit.Chapter01ApplicationTests.saveRedisPerson" />
         <item itemvalue="JUnit.Chapter01ApplicationTests.unitTest" />
-        <item itemvalue="JUnit.Chapter01ApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -391,7 +416,23 @@
       <option name="project" value="LOCAL" />
       <updated>1696674311567</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="8 springBoot整合RabbitMQ最新优化">
+      <option name="closed" value="true" />
+      <created>1698668589563</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1698668589563</updated>
+    </task>
+    <task id="LOCAL-00027" summary="8 springBoot整合RabbitMQ最新优化">
+      <option name="closed" value="true" />
+      <created>1698668753985</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1698668753985</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -442,7 +483,8 @@
     <MESSAGE value="5.1 --Spring MVC 功能拓展实现" />
     <MESSAGE value="5.2 --SpringBoot整合Servlet" />
     <MESSAGE value="5.3 --文件的上传与下载" />
-    <option name="LAST_COMMIT_MESSAGE" value="5.3 --文件的上传与下载" />
+    <MESSAGE value="8 springBoot整合RabbitMQ最新优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="8 springBoot整合RabbitMQ最新优化" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
