@@ -16,4 +16,3 @@ public interface CustomerRepository extends JpaRepository<Customer, Integer> {
     @Query("UPDATE t_customer c SET c.username = ?1 WHERE  c.username = ?2")
     void updateByUsername(String name,String username);
 }
-//
