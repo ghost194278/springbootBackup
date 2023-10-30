@@ -33,3 +33,4 @@ public interface DiscussRepositroy extends JpaRepository<Discuss, Integer> {
     public int updateComment(String author,Integer id);
 
 }
+//

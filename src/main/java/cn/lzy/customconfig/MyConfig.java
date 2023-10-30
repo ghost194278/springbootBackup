@@ -11,3 +11,4 @@ public class MyConfig {
         return new MyProperties();
     }
 }
+//

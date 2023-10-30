@@ -5,3 +5,4 @@ public class MyProperties {
         System.out.println("MyProperties加载成功!!!");
     }
 }
+//

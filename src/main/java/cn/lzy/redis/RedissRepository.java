@@ -16,5 +16,6 @@ public interface RedissRepository extends CrudRepository<Person, String> {
     List<Person> findByAddress_City(String city);
 
     List<Person> findByFamilyList_Username(String username);
+    void deleteById(String id);
 }
 

@@ -3,6 +3,7 @@ package cn.lzy.configbean;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
+import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -79,7 +80,7 @@ public class Student {
     public String toString() {
         return "Student{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + name +
                 ", age=" + age +
                 ", hobby=" + Arrays.toString(hobby) +
                 ", electProduct=" + electProduct +
