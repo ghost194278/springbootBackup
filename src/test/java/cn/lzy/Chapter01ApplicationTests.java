@@ -1,7 +1,7 @@
 package cn.lzy;
 
 import cn.lzy.RabbitMQ.MQUser;
-import cn.lzy.Service.SendEmailService;
+//import cn.lzy.Service.SendEmailService;
 import cn.lzy.configbean.Student;
 import cn.lzy.configbean.User;
 import cn.lzy.customconfig.CustonProperties;
@@ -70,8 +70,8 @@ public class Chapter01ApplicationTests {
     private AmqpAdmin amqpAdmin;
     @Autowired
     private RabbitTemplate rabbitTemplate;
-    @Autowired
-    private SendEmailService sendEmailService;
+//    @Autowired
+//    private SendEmailService sendEmailService;
     @Autowired
     private TemplateEngine templateEngine;
 
@@ -237,59 +237,59 @@ public class Chapter01ApplicationTests {
         rabbitTemplate.convertAndSend("fanout_qq", "", mqUser);
     }
 
-    @Test
-    public void sendSimpleMailTest() {
-        String to = "329511768@qq.com";
-        String subject = "【纯文本邮件】标题";
-        String text = "Spring Boot纯文本邮件发送内容测试.....";
-        sendEmailService.sendSimpleEmail(to, subject, text);
-    }
-
-    @Test
-    public void sendAttachmentEmailTest() {
-        String to = "329511768@qq.com";
-        String subject = "附件";
-        String filePath = "G:\\email\\元旦放假注意事项.txt"; // 附件文件路径
-
-        sendEmailService.sendAttachmentEmail(to, subject, filePath);
-    }
-
-
-    @Test
-    public void sendComplexEmailTest() {
-        String to = "329511768@qq.com";
-        String subject = "【复杂邮件】标题";
-        StringBuilder text = new StringBuilder();
-        text.append("<html><head></head>");
-        text.append("<body><h1>祝大家元旦快乐！</h1>");
-        String rscId = "img001";
-        text.append("<img src='cid:" + rscId + "'/></body>");
-        text.append("</html>");
-        String rscPath = "G:\\email\\newyear.jpg";
-        String filePath = "G:\\email\\元旦放假注意事项.txt";
-        sendEmailService.sendComplexEmail(to, subject, text.toString(), filePath, rscId, rscPath);
-    }
-
-    @Test
-    public void sendTemplateEmailTest() {
-        String to = "329511768@qq.com";
-        String subject = "【模板邮件】标题";
-        Context context = new Context();
-        context.setVariable("username", "石头");
-        context.setVariable("code", "456123");
-        String emailContent = templateEngine.process("emailTemplate_vercode", context);
-        sendEmailService.sendTemplateEmail(to, subject, emailContent);
-    }
-
-    @Test
-    public void sendImageEmailTest() {
-        String to = "329511768@qq.com";
-        String subject = "纯图片";
-        String rscPath = "G:\\email\\newyear.jpg"; // 图片文件路径
-        String rscId = "img001"; // 图片ID
-
-        sendEmailService.sendImageEmail(to, subject, rscPath, rscId);
-    }
+//    @Test
+//    public void sendSimpleMailTest() {
+//        String to = "329511768@qq.com";
+//        String subject = "【纯文本邮件】标题";
+//        String text = "Spring Boot纯文本邮件发送内容测试.....";
+//        sendEmailService.sendSimpleEmail(to, subject, text);
+//    }
+//
+//    @Test
+//    public void sendAttachmentEmailTest() {
+//        String to = "329511768@qq.com";
+//        String subject = "附件";
+//        String filePath = "G:\\email\\元旦放假注意事项.txt"; // 附件文件路径
+//
+//        sendEmailService.sendAttachmentEmail(to, subject, filePath);
+//    }
+//
+//
+//    @Test
+//    public void sendComplexEmailTest() {
+//        String to = "329511768@qq.com";
+//        String subject = "【复杂邮件】标题";
+//        StringBuilder text = new StringBuilder();
+//        text.append("<html><head></head>");
+//        text.append("<body><h1>祝大家元旦快乐！</h1>");
+//        String rscId = "img001";
+//        text.append("<img src='cid:" + rscId + "'/></body>");
+//        text.append("</html>");
+//        String rscPath = "G:\\email\\newyear.jpg";
+//        String filePath = "G:\\email\\元旦放假注意事项.txt";
+//        sendEmailService.sendComplexEmail(to, subject, text.toString(), filePath, rscId, rscPath);
+//    }
+//
+//    @Test
+//    public void sendTemplateEmailTest() {
+//        String to = "329511768@qq.com";
+//        String subject = "【模板邮件】标题";
+//        Context context = new Context();
+//        context.setVariable("username", "石头");
+//        context.setVariable("code", "456123");
+//        String emailContent = templateEngine.process("emailTemplate_vercode", context);
+//        sendEmailService.sendTemplateEmail(to, subject, emailContent);
+//    }
+//
+//    @Test
+//    public void sendImageEmailTest() {
+//        String to = "329511768@qq.com";
+//        String subject = "纯图片";
+//        String rscPath = "G:\\email\\newyear.jpg"; // 图片文件路径
+//        String rscId = "img001"; // 图片ID
+//
+//        sendEmailService.sendImageEmail(to, subject, rscPath, rscId);
+//    }
 
 
 }

@@ -29,3 +29,4 @@ public class MQUser {
         return "User{" + "id=" + id + ", username='" + username + '\'' + '}';
     }
 }
+//
