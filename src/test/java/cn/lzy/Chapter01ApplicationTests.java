@@ -74,10 +74,15 @@ public class Chapter01ApplicationTests {
     }
 
     @Test
-    public void contextLoads() {
+    public void second(){
         System.out.println("单元测试返回的数据" + student);
         System.out.println("单元测试返回的person数据" + person);
         System.out.println("单元测试返回的user数据" + user);
+    }
+
+    @Test
+    public void contextLoads() {
+
         Comment comment = commentMapper.findById(1);
         Comment comment5 = commentMapper.author("张三");
         System.out.println(commentMapper.author("张三"));
@@ -94,7 +99,7 @@ public class Chapter01ApplicationTests {
         System.out.println(comment2);
 
         Comment comment3 = new Comment();
-        commentMapper.deleteComment(5);
+        commentMapper.deleteComment(12);
 
         Comment comment4 = new Comment();
         comment4.setAuthor("张三");
@@ -116,7 +121,7 @@ public class Chapter01ApplicationTests {
 
     @Test
     public void deleteRedisPerson() {
-        RedissRepository.deleteById("f9b6be23-ea63-4e89-a259-bd9d8634e1f7");
+        RedissRepository.deleteById("acd5f6a3-4623-4e68-9443-7ce0feea310f");
     }
 
     @Test
